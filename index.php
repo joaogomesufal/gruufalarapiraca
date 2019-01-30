@@ -8,8 +8,6 @@ if(isset($_POST['generatePDF'])) {
 }
 
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +39,7 @@ if(isset($_POST['generatePDF'])) {
 								<div class="col-md-12">	
 									<div class="form-group">
 										<label>CPF: </label>
-										<input type="text" name="CPF" class="form-control">
+										<input type="text" name="CPF" data-mask="000.000.000-00" class="form-control">
 									</div>
 								</div>	
 							</div>
@@ -69,8 +67,7 @@ if(isset($_POST['generatePDF'])) {
 			</form>
 		</div>
 	</div>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
 </body>
-
-	<script src="node_modules/jquery/dist/jquery.js"></script>
-	<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </html>
