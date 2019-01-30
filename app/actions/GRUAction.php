@@ -26,7 +26,7 @@ class GRUAction {
 		    $valor);
 
 		$now_date = new \DateTime();
-		$now = $now_date->format('d/m/Y');
+		$now = $now_date->format('m/Y');
 		$now_date->add(new \DateInterval('P15D')); // P1D means a period of 1 day
 		$payment_date = $now_date->format('d/m/Y');
 		
