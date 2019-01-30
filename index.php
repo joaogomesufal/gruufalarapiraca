@@ -1,10 +1,9 @@
 <?php
 require __DIR__ . '/vendor/autoload.php';
-
 use App\Actions\GRUAction;
 
 if(isset($_POST['generatePDF'])) {
-	GRUAction::generate($_POST['nome'], $_POST['CPF'], intval($_POST['valor']));
+	GRUAction::generate($_POST['CPF'], $_POST['nome'], intval($_POST['valor']));
 }
 
 ?>

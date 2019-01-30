@@ -20,7 +20,7 @@ class GRUAction {
 
 		$dadosGru = new DadosGru(
 		    '15303715222',
-		    '108.245.274-29',
+		    $cpf,
 		    utf8_decode($nome),
 		    $valor,
 		    $valor);
