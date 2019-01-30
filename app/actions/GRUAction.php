@@ -22,8 +22,8 @@ class GRUAction {
 		    '15303715222',
 		    $cpf,
 		    utf8_decode($nome),
-		    $valor,
-		    $valor);
+		    number_format($valor, 2, ',', '.'),
+		    number_format($valor, 2, ',', '.');
 
 		$now_date = new \DateTime();
 		$now = $now_date->format('m/Y');
