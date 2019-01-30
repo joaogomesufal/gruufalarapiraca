@@ -23,7 +23,7 @@ class GRUAction {
 		    $cpf,
 		    utf8_decode($nome),
 		    number_format($valor, 2, ',', '.'),
-		    number_format($valor, 2, ',', '.');
+		    number_format($valor, 2, ',', '.'));
 
 		$now_date = new \DateTime();
 		$now = $now_date->format('m/Y');
