@@ -21,7 +21,7 @@ if(isset($_POST['generatePDF'])) {
 				<div class="col-md-6 col-md-offset-3" style="margin-top: 20px;">
 					<div class="panel panel-primary">
 						<div class="panel-heading">
-							Formulário para emição de GRU - Restaurante Universitário
+							Formulário para emissão de GRU - Restaurante Universitário
 						</div>
 
 						<div class="panel-body">
