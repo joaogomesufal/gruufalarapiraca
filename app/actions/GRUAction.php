@@ -15,6 +15,7 @@ class GRUAction {
 		$ug = new UnidadeGestora();
 		$ug->setCodigo('153037')
 		    ->setGestao('15222')
+		    ->setCodigoCorrelacao('904')
 		    ->setNomeUnidade('UNIVERSIDADE FEDERAL DE ALAGOAS')
 		    ->setCodigoRecolhimento(R::SERVICOS_DE_HOSPEDAGEM_E_ALIMENTACAO);
 
@@ -27,7 +28,7 @@ class GRUAction {
 
 		$now_date = new \DateTime();
 		$now = $now_date->format('m/Y');
-		$now_date->add(new \DateInterval('P15D')); // P1D means a period of 1 day
+		$now_date->add(new \DateInterval('P2D')); // P1D means a period of 1 day
 		$payment_date = $now_date->format('d/m/Y');
 		
 
