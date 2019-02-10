@@ -21,7 +21,7 @@ if(isset($_POST['generatePDF'])) {
 			
 			<div class="row">
 				<div class="col-md-4 col-md-offset-4">
-					<img id="logo-image" src="./public/images/logo.svg" alt="Universidade Federal de Alagoas - Campus Arapiraca. Guia de Recolhimento da União. Restaurante Universitário.">
+					<img id="logo-image" src="./public/images/logo-gru.svg" alt="Universidade Federal de Alagoas - Campus Arapiraca. Guia de Recolhimento da União. Restaurante Universitário.">
 				</div>
 			</div>
 			<div class="row" id="description-app">
