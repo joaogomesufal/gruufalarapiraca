@@ -23,7 +23,7 @@ body {
 }
 
 #app #logo-image {
-	width:  60%;
+	width:  80%;
 	display: block;
 	margin: 0 auto;
 	padding: 20px 0px 0px 0px;
@@ -60,3 +60,11 @@ body {
 	margin-bottom: 6px;
 }
 
+#footer{
+	text-align: center;
+	margin-top: 40px;
+}
+
+#footer small {
+	color: #fff;
+}

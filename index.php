@@ -27,7 +27,7 @@ if(isset($_POST['generatePDF'])) {
 			<div class="row" id="description-app">
 				<div class="col-md-4 col-md-offset-4">
 					<h4>Guia de Recolhimento da União</h4>
-					<p>Aplicação com intuito de simplificar o processo de emissão da GRU para o RU Campus Arapiraca.</p>
+					<p>Aplicação para simplificar o processo de emissão da GRU dos RUs da UFAL.</p>
 				</div>
 			</div>
 
@@ -37,7 +37,7 @@ if(isset($_POST['generatePDF'])) {
 						<div class="col-md-12">	
 							<div class="form-group">
 								<label>Nome *</label>
-								<input type="text" name="nome" class="form-control" required>
+								<input type="text" name="nome" class="form-control" required placeholder="Insira seu nome aqui">
 							</div>
 						</div>
 					</div>
@@ -46,7 +46,7 @@ if(isset($_POST['generatePDF'])) {
 						<div class="col-md-12">	
 							<div class="form-group">
 								<label>CPF *</label>
-								<input type="text" name="CPF" data-mask="000.000.000-00" class="form-control" required placeholder="000.000.000-00">
+								<input type="text" id="CPF" name="CPF" data-mask="000.000.000-00" class="form-control" required placeholder="000.000.000-00">
 							</div>
 						</div>	
 					</div>
@@ -54,20 +54,15 @@ if(isset($_POST['generatePDF'])) {
 					<div class="row">
 						<div class="col-md-12">	
 							<div class="form-group">
-								<label>Refeições *</label>
-								<small class="form-text text-value-gru" style="display: block;">
-									Valor a ser pago R$ <span id="valueGRUSpan">3</span>
-								</small>
-								<input type="number" value="1" id="mealsQuantity" class="form-control" required>
-
-								<input type="hidden" name="valor" id="valueGRU">
+								<label>Valor *</label>
+								<input type="number" name="valor" class="form-control" palcehold="Insira o valor a ser pago" required>
 							</div>
 						</div>
 					</div>
 
 					<div class="row">
 						<div class="col-md-12">	
-							<button type="submit" name="generatePDF" class="btn btn-app btn-block">
+							<button type="submit" id="generatePDF" name="generatePDF" class="btn btn-app btn-block">
 								<span class="glyphicon glyphicon-print"></span> &nbsp;
 								Gerar
 							</button>
@@ -76,7 +71,14 @@ if(isset($_POST['generatePDF'])) {
 				</div>
 			</div>
 		</form>
+
+		<div class="row" id="footer">
+			<p>Desenvolvido por NTI Campus Arapiraca</p>
+			<small>Fevereiro de 2019</small>
+		<div>
+
 	</div>
+	
 	<script src="./public/js/jquery.min.js"></script>
 	<script src="./public/js/jquery.mask.min.js"></script>
 	<script src="./public/js/app.js"></script>
